@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- CHANGES -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +24,7 @@
     <title>NetNinja Technologies</title>
 </head>
 
-<body class=" font-istok w-[100vw] overflow-x-hidden bg-black">
+<body class=" font-istok overflow-x-hidden bg-black">
 
     <!-- Hero Section Background -->
 
@@ -35,7 +37,7 @@
                 <img src="assets/bg2.png" alt="">
             </div>
         </div>
-        <svg class="w-[100vw] absolute opacity-20 h-[300vh]" xmlns='http://www.w3.org/2000/svg'>
+        <svg class="w-[100vw] absolute max-h-[1080px] opacity-20 h-[300vh]" xmlns='http://www.w3.org/2000/svg'>
             <filter id='noiseFilter'>
                 <feTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch' />
             </filter>
@@ -62,7 +64,7 @@
     <!-- Desktop NavBar -->
 
     <header id="desktop-navbar" class="w-[100vw] fixed z-50">
-        <nav class="items-center mx-auto py-4 md:px-10 px-4">
+        <nav class="items-center mx-auto max-w-[1920px] py-4 md:px-10 px-4">
             <div class="flex justify-between">
                 <div class="flex items-center">
                     <div>
@@ -90,13 +92,20 @@
                     </ul>
                 </div>
                 <div class="hidden lg:flex space-x-2">
-                    <a href="/user-dashboard.html" class="cursor-pointer hover:brightness-110 hover:animate-pulse font-bold border border-indigo-500 hover:border-white px-4 py-2 rounded-md transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">Dashboard</a>
-                    <a href="/login.html" class="cursor-pointer hover:brightness-90 hover:animate-pulse py-2 px-4 font-bold text-white">Login</a>
-                    <a href="/sign-up.html" class="cursor-pointer  hover:brightness-110 hover:animate-pulse font-bold border border-indigo-500 hover:border-white px-4 py-2 rounded-md transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">Sign Up</a>
+                    <a href="/user-dashboard.html"
+                        class="cursor-pointer hover:brightness-110 hover:animate-pulse font-bold border border-indigo-500 hover:border-white px-4 py-2 rounded-md transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">Dashboard</a>
+                    <a href="/login.html"
+                        class="cursor-pointer hover:brightness-90 hover:animate-pulse py-2 px-4 font-bold text-white">Login</a>
+                    <a href="/sign-up.html"
+                        class="cursor-pointer  hover:brightness-110 hover:animate-pulse font-bold border border-indigo-500 hover:border-white px-4 py-2 rounded-md transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">Sign
+                        Up</a>
                 </div>
                 <div class="lg:hidden flex space-x-2">
-                    <a href="/login.html" class="hover:brightness-90 hover:animate-pulse py-1 px-1.5 text-sm font-bold text-white">Login</a>
-                    <a href="/sign-up.html" class="hover:brightness-110 hover:animate-pulse font-bold border border-indigo-500 hover:border-white text-sm py-1 px-2 rounded-md transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">Sign Up</a>
+                    <a href="/login.html"
+                        class="hover:brightness-90 hover:animate-pulse py-1 px-1.5 text-sm font-bold text-white">Login</a>
+                    <a href="/sign-up.html"
+                        class="hover:brightness-110 hover:animate-pulse font-bold border border-indigo-500 hover:border-white text-sm py-1 px-2 rounded-md transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">Sign
+                        Up</a>
                     <button
                         class="mobile-menu-button-open items-center flex hover:brightness-110 hover:animate-pulse pl-2">
                         <svg class="w-7 h-7 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -154,7 +163,7 @@
 
     <!-- Hero Section -->
 
-    <section class="md:h-[100vh] flex items-center justify-center relative z-10">
+    <section class="md:h-[100vh] flex max-h-[1080px] items-center justify-center relative z-10">
         <div class="absolute group blur-[50px] hidden lg:block opacity-90 z-9">
             <div
                 class="w-0 h-0 absolute border-l-[300px] border-l-transparent border-b-[500px] border-b-indigo-500 rotate-12 border-r-[300px] -translate-x-[50%] border-r-transparent transition-all duration-1000 rounded-[10%] group-hover:translate-y-[10%] group-hover:rotate-45">
@@ -219,7 +228,7 @@
     <!-- Our Services Section -->
 
     <section class=" bg-gray-950 flex items-center border-t-[6px] border-indigo-500 justify-center z-10">
-        <div class="text-center bg-gray-950 w-[100%] p-8 z-10">
+        <div class="text-center bg-gray-950 w-[100%] max-w-[1920px] p-8 z-10">
             <h1 class="md:text-[56px] text-[40px] font-medium leading-[70px] md:leading-[80px] text-white">
                 Our Services
             </h1>
@@ -300,154 +309,157 @@
     <!-- Services Details Section -->
 
     <section
-        class=" bg-gradient-to-tl from-red-700 via-indigo-700 to-pink-700 flex-col pt-1 items-center border-t-[6px] border-indigo-500 justify-center relative z-10">
+        class=" flex items-center justify-center pt-1 border-t-[6px] border-indigo-500 relative z-10">
 
-        <div class="md:text-center bg-gray-900/60 py-4 w-[100%]">
-            <h1 class="md:text-[56px] text-[40px] font-medium leading-[50px] md:leading-[80px] px-8 py-4 text-white">
-                Android Closed Testing
-            </h1>
-            <div class="flex md:px-12 px-2 items-center">
-                <div class="flex-1">
-                    <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
-                        laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
-                        quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
-                    </p>
-                    <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
-                        laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
-                        quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
-                    </p>
-                    <div class="justify-center lg:flex">
-                        <button onclick=""
-                            class="hover:brightness-110 hover:animate-pulse group border border-indigo-500 hover:border-white px-2 rounded-md mx-6 my-2 transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">
-                            <div class="flex items-center justify-center">
-                                <p class="font-bold m-2">
-                                    The New Google Policy
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
-                                    stroke="currentColor" class="w-4 h-4 m-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                </svg>
-                            </div>
-                        </button>
-                        <button onclick=""
-                            class="hover:brightness-110 hover:animate-pulse group border border-indigo-500 hover:border-white px-2 rounded-md mx-6 my-2 transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">
-                            <div class="flex items-center justify-center">
-                                <p class="font-bold m-2">
-                                    Learn More
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
-                                    stroke="currentColor" class="w-4 h-4 m-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                </svg>
-                            </div>
-                        </button>
+        <div class="max-w-[1920px] bg-gradient-to-tl from-red-700 via-indigo-700 to-pink-700">
+            <div class="md:text-center bg-gray-900/60 py-4 w-[100%]">
+                <h1 class="md:text-[56px] text-[40px] font-medium leading-[50px] md:leading-[80px] px-8 py-4 text-white">
+                    Android Closed Testing
+                </h1>
+                <div class="flex md:px-12 px-2 items-center">
+                    <div class="flex-1">
+                        <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
+                            laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
+                            quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
+                        </p>
+                        <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
+                            laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
+                            quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
+                        </p>
+                        <div class="justify-center lg:flex">
+                            <button onclick=""
+                                class="hover:brightness-110 hover:animate-pulse group border border-indigo-500 hover:border-white px-2 rounded-md mx-6 my-2 transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">
+                                <div class="flex items-center justify-center">
+                                    <p class="font-bold m-2">
+                                        The New Google Policy
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+                                        stroke="currentColor" class="w-4 h-4 m-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <button onclick=""
+                                class="hover:brightness-110 hover:animate-pulse group border border-indigo-500 hover:border-white px-2 rounded-md mx-6 my-2 transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">
+                                <div class="flex items-center justify-center">
+                                    <p class="font-bold m-2">
+                                        Learn More
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+                                        stroke="currentColor" class="w-4 h-4 m-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="flex-1 hidden m-8 xl:block w-[100%] h-[500px]">
-                    <img src="/assets/Programming-rafiki.svg" class=" mx-auto h-[100%]">
-                    </img>
-                </div>
-            </div>
-        </div>
-
-        <div class="md:text-center bg-gray-900/60 mt-1 py-4 w-[100%]">
-            <h1 class="md:text-[56px] text-[40px] font-medium leading-[50px] md:leading-[80px] px-8 py-4 text-white">
-                Custom Website Development
-            </h1>
-            <div class="flex md:px-12 px-2 items-center">
-                <div class="bg-gray-400 flex-1 hidden m-8 xl:block w-[2000px] h-[500px]">
-
-                </div>
-                <div class="flex-1">
-                    <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
-                        laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
-                        quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
-                    </p>
-                    <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
-                        laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
-                        quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
-                    </p>
-                    <div class="lg:flex justify-center">
-                        <button onclick=""
-                            class="hover:brightness-110 hover:animate-pulse group border border-indigo-500 hover:border-white px-2 rounded-md mx-6 my-2 transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">
-                            <div class="flex items-center justify-center">
-                                <p class="font-bold m-2">
-                                    Learn More
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
-                                    stroke="currentColor" class="w-4 h-4 m-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                </svg>
-                            </div>
-                        </button>
+                    <div class="flex-1 hidden m-8 xl:block w-[100%] h-[500px]">
+                        <img src="/assets/Programming-rafiki.svg" class=" mx-auto h-[100%]">
+                        </img>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="md:text-center bg-gray-900/60 mt-1 py-4 pb-8 w-[100%]">
-            <h1 class="md:text-[56px] text-[40px] font-medium leading-[50px] md:leading-[80px] px-8 py-4 text-white">
-                Web Hosting
-            </h1>
-            <div class="flex md:px-12 px-2 items-center">
-                <div class="flex-1">
-                    <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
-                        laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
-                        quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
-                    </p>
-                    <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
-                        laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
-                        quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
-                    </p>
-                    <div class="lg:flex justify-center ">
-                        <button onclick=""
-                            class="hover:brightness-110 hover:animate-pulse group border border-indigo-500 hover:border-white px-2 rounded-md mx-6 my-2 transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">
-                            <div class="flex items-center justify-center">
-                                <p class="font-bold m-2">
-                                    Learn More
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
-                                    stroke="currentColor" class="w-4 h-4 m-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                </svg>
-                            </div>
-                        </button>
+    
+            <div class="md:text-center bg-gray-900/60 mt-1 py-4 w-[100%]">
+                <h1 class="md:text-[56px] text-[40px] font-medium leading-[50px] md:leading-[80px] px-8 py-4 text-white">
+                    Custom Website Development
+                </h1>
+                <div class="flex md:px-12 px-2 items-center">
+                    <div class="bg-gray-400 flex-1 hidden m-8 xl:block w-[2000px] h-[500px]">
+    
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
+                            laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
+                            quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
+                        </p>
+                        <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
+                            laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
+                            quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
+                        </p>
+                        <div class="lg:flex justify-center">
+                            <button onclick=""
+                                class="hover:brightness-110 hover:animate-pulse group border border-indigo-500 hover:border-white px-2 rounded-md mx-6 my-2 transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">
+                                <div class="flex items-center justify-center">
+                                    <p class="font-bold m-2">
+                                        Learn More
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+                                        stroke="currentColor" class="w-4 h-4 m-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-gray-800 flex-1 hidden m-8 xl:block w-[2000px] h-[500px]">
-
+            </div>
+    
+            <div class="md:text-center bg-gray-900/60 mt-1 py-4 pb-8 w-[100%]">
+                <h1 class="md:text-[56px] text-[40px] font-medium leading-[50px] md:leading-[80px] px-8 py-4 text-white">
+                    Web Hosting
+                </h1>
+                <div class="flex md:px-12 px-2 items-center">
+                    <div class="flex-1">
+                        <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
+                            laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
+                            quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
+                        </p>
+                        <p class="text-gray-200 text-justify md:p-8 p-6 text-2xl">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ea, perspiciatis sapiente fugit
+                            laborum quisquam quis inventore, omnis nulla earum dicta reprehenderit ducimus cum molestiae
+                            quas suscipit dolorem nesciunt aut in veniam adipisci. Voluptates, pariatur?
+                        </p>
+                        <div class="lg:flex justify-center ">
+                            <button onclick=""
+                                class="hover:brightness-110 hover:animate-pulse group border border-indigo-500 hover:border-white px-2 rounded-md mx-6 my-2 transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">
+                                <div class="flex items-center justify-center">
+                                    <p class="font-bold m-2">
+                                        Learn More
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+                                        stroke="currentColor" class="w-4 h-4 m-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 flex-1 hidden m-8 xl:block w-[2000px] h-[500px]">
+    
+                    </div>
                 </div>
             </div>
+    
+            <div
+                class="md:text-center bg-indigo-500 text-white border-[2px] border-indigo-500 hover:bg-blue-500 hover:animate-pulse hover:brightness-125 hover:border-white transition-all duration-300 text-center py-4">
+                <button
+                    class="md:text-[40px] text-[36px] font-medium leading-[50px] md:leading-[80px] underline w-[100%] h-[100%] px-2 py-4 ">
+                    Explore Our Services
+                </button>
+            </div>
         </div>
-
-        <div
-            class="md:text-center bg-indigo-500 text-white border-[2px] border-indigo-500 hover:bg-blue-500 hover:animate-pulse hover:brightness-125 hover:border-white transition-all duration-300 text-center py-4">
-            <button
-                class="md:text-[40px] text-[36px] font-medium leading-[50px] md:leading-[80px] underline w-[100%] h-[100%] px-2 py-4 ">
-                Explore Our Services
-            </button>
-        </div>
+        
 
     </section>
 
     <!-- User Reviews Section -->
 
-    <section class=" flex items-center group justify-center border-t-[6px] border-white relative z-0">
+    <section class=" flex items-center md:h-[600px] group justify-center border-t-[6px] border-white relative z-0">
         <div class="w-[100vw] absolute xl:hidden opacity-50">
             <img src="assets/bg2.png" alt="">
         </div>
 
-        <svg class="w-[100vw] absolute opacity-30 h-[150%] overflow-y-hidden" xmlns='http://www.w3.org/2000/svg'>
+        <svg class="w-[100vw] h-[100%] absolute opacity-30 overflow-y-hidden" xmlns='http://www.w3.org/2000/svg'>
             <filter id='noiseFilter'>
                 <feTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch' />
             </filter>
@@ -480,7 +492,7 @@
         </div>
 
 
-        <div class="text-center w-[100%] p-4 z-10">
+        <div class="text-center w-[100%] max-w-[1920px] p-4 z-10">
             <h1 class="md:text-[56px] text-[40px] font-medium leading-[70px] md:leading-[80px] py-6 text-white">
                 What Our Users Say About Us
             </h1>
@@ -540,9 +552,9 @@
 
     <!-- Footer Menu -->
 
-    <footer class="relative z-40 bg-black border-t-[6px] border-indigo-500 xl:pt-16 pt-12 pb-20 xl:px-24 px-10">
+    <footer class="relative z-40 bg-black border-t-[6px] flex flex-col items-center border-indigo-500 xl:pt-16 pt-12 pb-20 xl:px-24 px-10">
 
-        <div class="flex lg:flex-row flex-col lg:justify-between bg-red-00 md:items-center">
+        <div class="flex lg:flex-row flex-col lg:justify-between w-[100%] max-w-[1920px] md:items-center">
             <div class="">
                 <h1
                     class=" text-5xl font-semibold bg-gradient-to-r from-indigo-500 py-2 font-rubik via-fuchsia-400 to-blue-100 bg-clip-text text-transparent">
@@ -635,42 +647,57 @@
             </div>
         </div>
 
-        <div class="bg-[#a59cb8]/30 h-0.5 w-full my-6">
+        <div class="bg-[#a59cb8]/30 h-0.5 w-full max-w-[3840px] my-6">
         </div>
 
-        <div class="flex justify-between items-center mt-2">
+        <div class="flex justify-between items-center w-[100%] max-w-[1920px] mt-2">
             <h1 class="text-[#a59cb8]">
                 2024 All Rights Reserved
             </h1>
             <div class="flex items-center justify-center">
                 <div class="flex justify-center m-2 items-center">
-                    <button href="/" class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-neutral-300 text-black font-semibold hover:translate-y-1 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="0" fill="currentColor" stroke="currentColor" >
-                        <path d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"></path>
-                      </svg>
-                      <span class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-400 group-hover:text-sm group-hover:-translate-y-10 duration-700">
-                        x
-                      </span>
+                    <button href="/"
+                        class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-neutral-300 text-black font-semibold hover:translate-y-1 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                            stroke-width="0" fill="currentColor" stroke="currentColor">
+                            <path
+                                d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z">
+                            </path>
+                        </svg>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-400 group-hover:text-sm group-hover:-translate-y-10 duration-700">
+                            x
+                        </span>
                     </button>
                 </div>
                 <div class="flex justify-center m-2 items-center">
-                    <button href="/" class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-neutral-300 text-black font-semibold hover:translate-y-1 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="0" fill="currentColor" stroke="currentColor" >
-                        <path d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"></path>
-                      </svg>
-                      <span class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-400 group-hover:text-sm group-hover:-translate-y-10 duration-700">
-                        x
-                      </span>
+                    <button href="/"
+                        class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-neutral-300 text-black font-semibold hover:translate-y-1 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                            stroke-width="0" fill="currentColor" stroke="currentColor">
+                            <path
+                                d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z">
+                            </path>
+                        </svg>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-400 group-hover:text-sm group-hover:-translate-y-10 duration-700">
+                            x
+                        </span>
                     </button>
                 </div>
                 <div class="flex justify-center m-2 items-center">
-                    <button href="/" class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-neutral-300 text-black font-semibold hover:translate-y-1 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="0" fill="currentColor" stroke="currentColor" >
-                        <path d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"></path>
-                      </svg>
-                      <span class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-400 group-hover:text-sm group-hover:-translate-y-10 duration-700">
-                        x
-                      </span>
+                    <button href="/"
+                        class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-neutral-300 text-black font-semibold hover:translate-y-1 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                            stroke-width="0" fill="currentColor" stroke="currentColor">
+                            <path
+                                d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z">
+                            </path>
+                        </svg>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-400 group-hover:text-sm group-hover:-translate-y-10 duration-700">
+                            x
+                        </span>
                     </button>
                 </div>
             </div>
@@ -678,7 +705,9 @@
 
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="/script.js">
+        
+    </script>
 </body>
 
 </html>

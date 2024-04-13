@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.classList.add('hidden');
     });
 
-
     window.addEventListener('scroll', () => {
         if (window.scrollY > 1000) {
             navbar.classList.add('bg-gray-950');
