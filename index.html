@@ -63,7 +63,7 @@
 
 
 
-    
+
     <!-- Desktop NavBar -->
 
     <header id="desktop-navbar" class="w-[100vw] fixed z-50">
@@ -95,11 +95,11 @@
                     </ul>
                 </div>
                 <div class="hidden lg:flex space-x-2">
-                    <a href="/user-dashboard.html"
+                    <a href="/pages/user-dashboard/index.html"
                         class="cursor-pointer hover:brightness-110 hover:animate-pulse font-bold border border-indigo-500 hover:border-white px-4 py-2 rounded-md transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">Dashboard</a>
-                    <a href="/login.html"
+                    <a href="/pages/login/index.html"
                         class="cursor-pointer hover:brightness-90 hover:animate-pulse py-2 px-4 font-bold text-white">Login</a>
-                    <a href="/sign-up.html"
+                    <a href="/pages/sign-up/index.html"
                         class="cursor-pointer  hover:brightness-110 hover:animate-pulse font-bold border border-indigo-500 hover:border-white px-4 py-2 rounded-md transition-all duration-300 bg-indigo-500 shadow-lg shadow-indigo-500/20 text-white hover:-translate-y-1">Sign
                         Up</a>
                 </div>
@@ -717,8 +717,36 @@
 
     </footer>
 
-    <script src="/index.js">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const open_btn = document.querySelector('.mobile-menu-button-open');
+            const close_btn = document.querySelector('.mobile-menu-button-close');
+            const menu = document.querySelector('.mobile-menu');
+            const navbar = document.getElementById('desktop-navbar');
+            const scrollToTopButton = document.getElementById('scroll-to-top');
 
+            open_btn.addEventListener('click', () => {
+                menu.classList.remove('hidden');
+            });
+
+            close_btn.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+
+            scrollToTopButton.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 1000) {
+                    scrollToTopButton.classList.remove('hidden');
+                    navbar.classList.add('bg-gray-950');
+                } else {
+                    scrollToTopButton.classList.add('hidden');
+                    navbar.classList.remove('bg-gray-950');
+                }
+            });
+        });
     </script>
 </body>
 
