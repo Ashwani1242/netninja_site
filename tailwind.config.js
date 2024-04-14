@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme');
-const { build, rollupVersion } = require('vite');
+import Inspect from 'vite-plugin-inspect'
+import { resolve } from 'path'
+
+
 module.exports = {
   content: [
     "*",
-    "/login.html",
+    './pages/**/*.{html,js}',
+    './components/**/*.{html,js}',
   ],
   theme: {
     extend: {
@@ -16,4 +19,5 @@ module.exports = {
   },
   plugins: [],
 }
+
 
